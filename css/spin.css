@@ -1,0 +1,6 @@
+body { margin: 10px; padding: 10px; }
+#preview { width: 172px; height: 172px; float: left; 
+           border-radius: 10px; background:#eef; margin-right: 10px;
+}
+a { text-decoration: none; }
+#site { position: absolute; top: 200px; }

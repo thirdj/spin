@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<link rel="shortcut icon" href="http://fgnass.github.com/spin.js/favicon.ico">
+<link rel="stylesheet" type="text/css" href="./css/spin.css" />
+<script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+<script src="./js/spin.js"></script>
+  
+<title>spin.js / loading</title>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="preview"></div>
+  <div id="site">visit :
+    <a href="http://fgnass.github.com/spin.js/">
+      <strong>http://fgnass.github.com/spin.js/</strong>
+    </a>
+  </div>
+<script>
+    $(document).ready(function(){
+        var opts = {
+            lines: 12, // The number of lines to draw
+            length: 7, // The length of each line
+            width: 5, // The line thickness
+            radius: 10, // The radius of the inner circle
+            color: '#000', // #rgb or #rrggbb
+            speed: 1, // Rounds per second
+            trail: 62, // Afterglow percentage
+            shadow: false // Whether to render a shadow
+        };
+        var target = document.getElementById('preview');
+        var spinner = new Spinner(opts).spin(target);
+    });
+</script>
+</body>
+</html>
